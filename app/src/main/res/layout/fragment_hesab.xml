@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HesabFragment">
+
+
+
+
+    <EditText
+        android:id="@+id/bsqbal"
+        android:layout_width="179dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="BSQ"
+        android:textAlignment="center"
+        android:textColorHint="@color/brown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ksq6"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/ksq6"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/brown"
+        android:fontFamily="serif"
+        android:hint="KSQ 6"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ksq5" />
+
+    <EditText
+        android:id="@+id/ksq1"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/brown"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="KSQ 1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/ksq2"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/brown"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="KSQ 2"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ksq1" />
+
+    <EditText
+        android:id="@+id/ksq3"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/brown"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="KSQ 3"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ksq2" />
+
+    <EditText
+        android:id="@+id/ksq4"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/brown"
+        android:ems="10"
+        android:hint="KSQ 4"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ksq3"
+        android:fontFamily="serif" />
+
+    <EditText
+        android:id="@+id/ksq5"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/brown"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="KSQ 5"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ksq4" />
+
+    <Button
+        android:id="@+id/geriHesab"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:fontFamily="serif"
+        android:text="Əvvəlki səhifəyə dön"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/brown"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Zəhmət olmasa şagirdin ballarını daxil edin!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="366dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="serif"
+        android:hint="Nəticə burada əks olunacaqdır."
+        android:textAlignment="center"
+        android:textColorHint="@color/brown"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bsqbal" />
+
+    <TextView
+        android:id="@+id/illikBal"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/brown"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="bal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/illikQiymet"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/brown"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="qiymət"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/illikBal" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

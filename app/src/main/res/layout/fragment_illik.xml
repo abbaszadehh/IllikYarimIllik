@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentIllik"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.IllikFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/geriIllik"
+        android:layout_width="150dp"
+        android:layout_height="65dp"
+        android:fontFamily="serif"
+        android:text="Ana səhifəyə dön"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="99dp"
+        android:background="@color/brown"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Zəhmət olmasa müvafiq xanaları doldurun!"
+        android:textAlignment="center"
+        android:textColor="#5D4037"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/firstTerm"
+        android:layout_width="193dp"
+        android:layout_height="53dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="I yarımil"
+        android:inputType="number"
+        android:scrollbarSize="10dp"
+        android:textColorHint="@color/brown"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/secondTerm"
+        android:layout_width="193dp"
+        android:layout_height="53dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:hint="II yarımil"
+        android:inputType="number"
+        android:scrollbarSize="10dp"
+        android:textColorHint="@color/brown"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstTerm" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="334dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center"
+        android:hint="Nəticə burada əks olunacaqdır."
+        android:textAlignment="center"
+        android:textColorHint="@color/brown"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/illikBal"
+        android:layout_width="217dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/brown"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="bal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/illikQiymet"
+        android:layout_width="217dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/brown"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="qiymət"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/illikBal" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondTerm">
+
+        <Button
+            android:id="@+id/hesabla"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ac954d"
+            android:fontFamily="serif"
+            android:onClick="hesabla"
+            android:text="Hesabla"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/sifirla"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:backgroundTint="#ac954d"
+            android:fontFamily="serif"
+            android:onClick="sifirla"
+            android:text="sıfırla"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            app:cornerRadius="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

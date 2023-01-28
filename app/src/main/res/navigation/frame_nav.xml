@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/hesabFragment"
+        android:name="az.ayn.illik_ve_yarimillik.fragment.HesabFragment"
+        android:label="fragment_hesab"
+        tools:layout="@layout/fragment_hesab" >
+        <action
+            android:id="@+id/action_hesabFragment_to_yarimillikFragment"
+            app:destination="@id/yarimillikFragment" />
+        <argument
+            android:name="ksqSay"
+            app:argType="integer" />
+        <argument
+            android:name="bsqVar"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="az.ayn.illik_ve_yarimillik.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_yarimillikFragment"
+            app:destination="@id/yarimillikFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_illikFragment"
+            app:destination="@id/illikFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/illikFragment"
+        android:name="az.ayn.illik_ve_yarimillik.fragment.IllikFragment"
+        android:label="fragment_illik"
+        tools:layout="@layout/fragment_illik" >
+        <action
+            android:id="@+id/action_illikFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/yarimillikFragment"
+        android:name="az.ayn.illik_ve_yarimillik.fragment.YarimillikFragment"
+        android:label="fragment_yarimillik"
+        tools:layout="@layout/fragment_yarimillik" >
+        <action
+            android:id="@+id/action_yarimillikFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_yarimillikFragment_to_hesabFragment"
+            app:destination="@id/hesabFragment" />
+        <argument
+            android:name="ksqSay"
+            app:argType="integer" />
+    </fragment>
+</navigation>
