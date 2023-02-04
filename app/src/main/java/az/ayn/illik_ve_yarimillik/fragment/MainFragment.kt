@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import az.ayn.illik_ve_yarimillik.MainFragmentDirections
 import az.ayn.illik_ve_yarimillik.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -28,12 +27,12 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
        binding.yarimil.setOnClickListener {
-           val action = MainFragmentDirections.actionMainFragmentDirectionstoYarimillikFragment()
+           val action = MainFragmentDirections.actionMainFragmentToYarimillikFragment()
            Navigation.findNavController(it).navigate(action)
        }
 
        binding.tvIllik.setOnClickListener{
-           val action = MainFragmentDirections.actionFragmentDirectionstoIllikFragment()
+           val action = MainFragmentDirections.actionMainFragmentToIllikFragment()
            Navigation.findNavController(it).navigate(action)
        }
 

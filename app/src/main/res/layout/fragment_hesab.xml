@@ -4,28 +4,27 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hesFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragment.HesabFragment">
-
-
 
 
     <EditText
         android:id="@+id/bsqbal"
         android:layout_width="179dp"
         android:layout_height="37dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@color/white"
         android:ems="10"
         android:fontFamily="serif"
         android:hint="BSQ"
+        android:inputType="number"
         android:textAlignment="center"
         android:textColorHint="@color/brown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ksq6"
-        android:inputType="number" />
+        app:layout_constraintTop_toBottomOf="@+id/ksq6" />
 
     <EditText
         android:id="@+id/ksq6"
@@ -33,9 +32,9 @@
         android:layout_height="30dp"
         android:layout_marginTop="12dp"
         android:background="@color/brown"
+        android:ems="10"
         android:fontFamily="serif"
         android:hint="KSQ 6"
-        android:ems="10"
         android:inputType="number"
         android:textAlignment="center"
         android:textColorHint="@color/white"
@@ -47,7 +46,7 @@
         android:id="@+id/ksq1"
         android:layout_width="171dp"
         android:layout_height="30dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:background="@color/brown"
         android:ems="10"
         android:fontFamily="serif"
@@ -57,7 +56,7 @@
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/enterKsq" />
 
     <EditText
         android:id="@+id/ksq2"
@@ -100,6 +99,7 @@
         android:layout_marginTop="12dp"
         android:background="@color/brown"
         android:ems="10"
+        android:fontFamily="serif"
         android:hint="KSQ 4"
         android:inputType="number"
         android:textAlignment="center"
@@ -107,8 +107,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ksq3"
-        android:fontFamily="serif" />
+        app:layout_constraintTop_toBottomOf="@+id/ksq3" />
 
     <EditText
         android:id="@+id/ksq5"
@@ -118,6 +117,7 @@
         android:background="@color/brown"
         android:ems="10"
         android:fontFamily="serif"
+        android:visibility="visible"
         android:hint="KSQ 5"
         android:inputType="number"
         android:textAlignment="center"
@@ -126,6 +126,23 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ksq4" />
+
+    <TextView
+        android:id="@+id/enterKsq"
+        android:layout_width="171dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/brown"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:text="KSQ sayi"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <Button
         android:id="@+id/geriHesab"
@@ -144,7 +161,6 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="49dp"
-        android:layout_marginTop="16dp"
         android:background="@color/brown"
         android:fontFamily="serif"
         android:gravity="center"
@@ -154,13 +170,13 @@
         android:textSize="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="16dp" />
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="366dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="24dp"
+        android:layout_width="355dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="serif"
         android:hint="Nəticə burada əks olunacaqdır."
         android:textAlignment="center"
@@ -174,7 +190,7 @@
         android:id="@+id/illikBal"
         android:layout_width="185dp"
         android:layout_height="44dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:background="@color/brown"
         android:fontFamily="serif"
         android:gravity="center"
@@ -199,7 +215,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/illikBal" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

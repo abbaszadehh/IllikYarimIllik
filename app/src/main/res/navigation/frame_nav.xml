@@ -14,11 +14,8 @@
             android:id="@+id/action_hesabFragment_to_yarimillikFragment"
             app:destination="@id/yarimillikFragment" />
         <argument
-            android:name="ksqSay"
+            android:name="ksqSayi"
             app:argType="integer" />
-        <argument
-            android:name="bsqVar"
-            app:argType="boolean" />
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
@@ -52,8 +49,5 @@
         <action
             android:id="@+id/action_yarimillikFragment_to_hesabFragment"
             app:destination="@id/hesabFragment" />
-        <argument
-            android:name="ksqSay"
-            app:argType="integer" />
     </fragment>
 </navigation>
