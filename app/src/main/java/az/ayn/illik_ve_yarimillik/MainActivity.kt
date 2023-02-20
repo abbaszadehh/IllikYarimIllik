@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         
         
-        setContentView(R.layout.fragment_main)
+        setContentView(R.layout.activity_main)
 
 
 
