@@ -36,13 +36,7 @@ class MainFragment : Fragment() {
            Navigation.findNavController(it).navigate(action)
        }
 
+
+
     }
-
-    companion object {
-
-        @JvmStatic
-        fun newInstance() =  MainFragment().apply {
-
-                    }
-                }
     }

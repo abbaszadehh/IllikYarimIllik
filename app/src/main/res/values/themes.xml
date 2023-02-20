@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.Illik_ve_yarimillik" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#ac954d</item>
-        <item name="colorPrimaryVariant">#ac954d</item>
+        <item name="colorPrimary">#06A193</item>
+        <item name="colorPrimaryVariant">#00796B</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">#ac954d</item>
+        <item name="android:statusBarColor">#00796B</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

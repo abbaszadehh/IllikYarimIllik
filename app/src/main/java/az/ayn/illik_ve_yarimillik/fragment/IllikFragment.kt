@@ -41,6 +41,9 @@ class IllikFragment : Fragment() {
        }
 
         binding.hesabla.setOnClickListener {
+            with(binding){
+                
+            }
 
                 param1 = binding.firstTerm.text.toString().toDoubleOrNull()
                 param2 = binding.secondTerm.text.toString().toDoubleOrNull()
@@ -53,7 +56,7 @@ class IllikFragment : Fragment() {
 
             {
               resultBal = (param1!! + param2!!)/2
-              binding.illikBal.text = "Illik bal : $resultBal"
+              binding.bal.text = "Illik bal : $resultBal"
 
                 if(resultBal!!<=30.09){
                     resultQiymet = 2.0
@@ -70,17 +73,21 @@ class IllikFragment : Fragment() {
                     resultQiymet = 5.0
                 }
 
-                binding.illikQiymet.text = "Illik qiymət : $resultQiymet"
+                binding.qiymet.text = "Illik qiymət : $resultQiymet"
 
                               }
 
             }
 
         binding.sifirla.setOnClickListener {
-            binding.firstTerm.text = null
-            binding.secondTerm.text = null
-            binding.illikBal.text = "bal"
-            binding.illikQiymet.text = "qiymət"
+
+            with(binding){
+                firstTerm.text = null
+                secondTerm.text = null
+                bal.text = "bal"
+                qiymet.text = "qiymət"
+            }
+
 
         }
 
