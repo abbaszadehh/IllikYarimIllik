@@ -1,24 +1,29 @@
 package az.ayn.illik_ve_yarimillik.fragment
 
+import android.app.Fragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
-import androidx.navigation.fragment.navArgs
 import az.ayn.illik_ve_yarimillik.databinding.FragmentHesabBinding
+import az.ayn.illik_ve_yarimillik.databinding.FragmentHesabBinding.inflate
+import kotlin.properties.ReadOnlyProperty
 
 class HesabFragment() : Fragment() {
     private lateinit var binding: FragmentHesabBinding
     private val args: HesabFragmentArgs by navArgs()
 
+    private fun navArgs(): ReadOnlyProperty<HesabFragment, HesabFragmentArgs> {
+        TODO("Not yet implemented")
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View {
-        binding = FragmentHesabBinding.inflate(layoutInflater, container, false)
+        binding = inflate(layoutInflater, container, false)
         return binding.root
     }
 
